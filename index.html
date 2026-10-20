@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BridalGlow — discover bridal artists and plan your wedding beauty services.">
+  <title>BridalGlow | Bridal Services Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">Your wedding, your glow <span>✦</span> Discover artists who make your day unforgettable</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="BridalGlow home"><span class="brand-mark">B</span><span>Bridal<span class="brand-light">Glow</span><small>YOUR DAY. YOUR GLOW.</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#services">Services</a>
+      <a class="nav-link" href="#artists">Find Artists</a>
+      <a class="nav-link" href="#gallery">Inspiration</a>
+      <a class="nav-link" href="#dashboard">My Bookings <span class="nav-count" id="bookingCount">0</span></a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">☾</button>
+      <button class="btn btn-outline" id="loginBtn">Sign in</button>
+      <button class="btn btn-primary" id="joinBtn">Get started <span>↗</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> THE WEDDING EDITION</div>
+        <h1>Your dream day.<br><em>Your kind of beautiful.</em></h1>
+        <p>Meet talented bridal artists, explore their work, and find the perfect team for your most cherished moments.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-large" href="#artists">Explore artists <span>↗</span></a>
+          <a class="text-link" href="#services">Discover our services <span>→</span></a>
+        </div>
+        <div class="hero-proof">
+          <div class="avatar-stack">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&q=80" alt="Happy customer">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=80&q=80" alt="Happy customer">
+            <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=80&q=80" alt="Happy customer">
+          </div>
+          <div><strong>Curated with care</strong><small>Find a style that feels like you</small></div>
+          <div class="proof-divider"></div>
+          <div><strong>4.9/5 <span class="stars">★★★★★</span></strong><small>Sample community rating</small></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-photo-main">
+          <img src="https://images.unsplash.com/photo-1594465919760-441fe5908ab0?auto=format&fit=crop&w=1000&q=85" alt="Bride in elegant wedding attire">
+        </div>
+        <div class="floating-note note-top"><span class="note-icon">✿</span><div><strong>Made for your moment</strong><small>Beauty, style & memories</small></div></div>
+        <div class="floating-note note-bottom"><div class="mini-heart">♡</div><div><strong>Save your favourites</strong><small>Build your bridal shortlist</small></div></div>
+        <span class="hero-sparkle sparkle-one">✦</span><span class="hero-sparkle sparkle-two">✧</span>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <span>THE DETAILS MATTER</span><i></i><span>THE ARTISTS MAKE THE MAGIC</span><i></i><span>THE MEMORIES LAST FOREVER</span>
+    </section>
+
+    <section class="section services-section" id="services">
+      <div class="section-heading">
+        <div><div class="eyebrow">A LITTLE SOMETHING FOR EVERY BRIDE</div><h2>Everything for your <em>bridal story</em></h2></div>
+        <a class="text-link" href="#artists">View all artists <span>→</span></a>
+      </div>
+      <div class="service-grid">
+        <button class="service-card" data-category="Makeup"><div class="service-image"><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=500&q=80" alt="Bridal makeup"><span>01</span></div><div class="service-info"><div><h3>Makeup & beauty</h3><p>From soft glam to timeless bridal looks</p></div><b>↗</b></div></button>
+        <button class="service-card" data-category="Mehndi"><div class="service-image"><img src="https://images.unsplash.com/photo-1610173826608-bd1b7f3f4b8a?auto=format&fit=crop&w=500&q=80" alt="Mehndi art"><span>02</span></div><div class="service-info"><div><h3>Mehndi & art</h3><p>Intricate designs with a personal touch</p></div><b>↗</b></div></button>
+        <button class="service-card" data-category="Photography"><div class="service-image"><img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=500&q=80" alt="Wedding photography"><span>03</span></div><div class="service-info"><div><h3>Photography</h3><p>Little moments, beautifully remembered</p></div><b>↗</b></div></button>
+        <button class="service-card" data-category="Bridal Wear"><div class="service-image"><img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=500&q=80" alt="Bridal fashion"><span>04</span></div><div class="service-info"><div><h3>Bridal wear</h3><p>Looks that make you feel like you</p></div><b>↗</b></div></button>
+      </div>
+    </section>
+
+    <section class="section artists-section" id="artists">
+      <div class="section-heading">
+        <div><div class="eyebrow">YOUR DREAM TEAM IS HERE</div><h2>Meet the <em>artists</em></h2><p class="section-subtitle">Thoughtfully featured talent to help you bring your vision to life.</p></div>
+        <div class="artist-count"><strong id="resultCount">6</strong><span>artists to explore</span></div>
+      </div>
+      <div class="filter-panel">
+        <label class="search-box"><span>⌕</span><input type="search" id="searchInput" placeholder="Search artist, service or city..." aria-label="Search artists"></label>
+        <label class="filter-field"><span>Category</span><select id="categoryFilter"><option value="All">All services</option><option>Makeup</option><option>Mehndi</option><option>Photography</option><option>Bridal Wear</option><option>Hair Styling</option><option>Skincare</option></select></label>
+        <label class="filter-field"><span>Location</span><select id="locationFilter"><option value="All">All locations</option><option>Chennai</option><option>Bengaluru</option><option>Mumbai</option><option>Coimbatore</option><option>Hyderabad</option></select></label>
+        <label class="filter-field"><span>Sort by</span><select id="sortFilter"><option value="featured">Featured</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="rating">Top rated</option></select></label>
+        <button class="filter-reset" id="resetFilters">Reset</button>
+      </div>
+      <div class="artist-grid" id="artistGrid" aria-live="polite"></div>
+      <div class="empty-state hidden" id="emptyState"><div>♡</div><h3>No artists found just yet</h3><p>Try another category or clear your filters.</p><button class="btn btn-outline" id="emptyReset">Clear filters</button></div>
+      <div class="centered"><button class="btn btn-outline btn-large" id="showFavorites">♡ View my favourites <span id="favoriteCount">0</span></button></div>
+    </section>
+
+    <section class="quote-banner" id="gallery">
+      <div class="quote-image"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=85" alt="Romantic wedding celebration"></div>
+      <div class="quote-content"><div class="eyebrow">A MOODBOARD FOR YOUR MOMENT</div><div class="quote-mark">“</div><h2>Let your day feel<br><em>like your love story.</em></h2><p>Collect ideas, save the artists you love, and shape a celebration that feels unmistakably yours.</p><a href="#artists" class="btn btn-light">Find your inspiration <span>↗</span></a><div class="quote-flower">✿</div></div>
+    </section>
+
+    <section class="section dashboard-section" id="dashboard">
+      <div class="section-heading"><div><div class="eyebrow">YOUR WEDDING, AT YOUR PACE</div><h2>Your bridal <em>dashboard</em></h2><p class="section-subtitle">Keep your favourite artists and demo bookings together.</p></div><button class="btn btn-primary" id="dashboardBookBtn">Find an artist ↗</button></div>
+      <div class="dashboard-stats"><div class="dash-stat"><span>♡</span><div><strong id="dashFavorites">0</strong><small>Saved favourites</small></div></div><div class="dash-stat"><span>▣</span><div><strong id="dashBookings">0</strong><small>Demo bookings</small></div></div><div class="dash-stat"><span>✦</span><div><strong id="dashArtists">6</strong><small>Featured artists</small></div></div></div>
+      <div class="booking-list-wrap"><div class="list-heading"><h3>Your bookings</h3><span class="pill">DEMO BOOKINGS</span></div><div id="bookingList" class="booking-list"><div class="empty-bookings"><span>♡</span><p>Your next beautiful plan starts here.</p><small>Book an artist to see your appointments here.</small></div></div></div>
+    </section>
+
+    <section class="newsletter">
+      <div><div class="eyebrow">A LITTLE WEDDING MAGIC IN YOUR INBOX</div><h2>Save the date for <em>something lovely.</em></h2><p>Get bridal ideas and planning inspiration, just for you.</p></div>
+      <form id="newsletterForm" class="newsletter-form"><label class="sr-only" for="newsletterEmail">Email address</label><input type="email" id="newsletterEmail" placeholder="Your email address" required><button class="btn btn-primary" type="submit">Join the list ↗</button><small>Demo only — no email will be sent.</small></form>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-top"><a class="brand brand-footer" href="#home"><span class="brand-mark">B</span><span>Bridal<span class="brand-light">Glow</span><small>YOUR DAY. YOUR GLOW.</small></span></a><p>For the moments that become memories.</p><div class="footer-links"><a href="#services">Services</a><a href="#artists">Artists</a><a href="#dashboard">My bookings</a></div></div><div class="footer-bottom"><span>© 2026 BridalGlow · Student project prototype</span><span>Made with ♡ for your special day</span></div></footer>
+
+  <div class="modal-backdrop hidden" id="modalBackdrop">
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close dialog">×</button>
+      <div id="modalContent"></div>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
